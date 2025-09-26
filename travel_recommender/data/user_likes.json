@@ -1,0 +1,160 @@
+{
+    "Anuradhapura": {
+        "users": [
+            "j",
+            "f"
+        ],
+        "count": 2
+    },
+    "Katharagama": {
+        "users": [
+            "j",
+            "f"
+        ],
+        "count": 2
+    },
+    "Jaffna": {
+        "users": [
+            "j"
+        ],
+        "count": 1
+    },
+    "Nuwara Eliya": {
+        "users": [
+            "a",
+            "e",
+            "i"
+        ],
+        "count": 3
+    },
+    "Horton Plains National Park": {
+        "users": [
+            "a",
+            "e",
+            "sanduni"
+        ],
+        "count": 3
+    },
+    "Sinharaja Forest Reserve": {
+        "users": [
+            "a",
+            "e"
+        ],
+        "count": 2
+    },
+    "Peradeniya ": {
+        "users": [
+            "a",
+            "e"
+        ],
+        "count": 2
+    },
+    "Sigiriya": {
+        "users": [
+            "c",
+            "f",
+            "e"
+        ],
+        "count": 3
+    },
+    "Udawalawe National Park": {
+        "users": [
+            "c"
+        ],
+        "count": 1
+    },
+    "Yala National Park": {
+        "users": [
+            "c",
+            "g"
+        ],
+        "count": 2
+    },
+    "Mirissa": {
+        "users": [
+            "d"
+        ],
+        "count": 1
+    },
+    "Trincomalee": {
+        "users": [
+            "d",
+            "h"
+        ],
+        "count": 2
+    },
+    "Madu River": {
+        "users": [
+            "e",
+            "a"
+        ],
+        "count": 2
+    },
+    "Galle": {
+        "users": [
+            "f",
+            "sanduni"
+        ],
+        "count": 2
+    },
+    "Dambulla": {
+        "users": [
+            "f"
+        ],
+        "count": 1
+    },
+    "Wilpattu National Park": {
+        "users": [
+            "g"
+        ],
+        "count": 1
+    },
+    "Hikkaduwa": {
+        "users": [
+            "h"
+        ],
+        "count": 1
+    },
+    "Ella": {
+        "users": [
+            "i"
+        ],
+        "count": 1
+    },
+    "Arugam Bay": {
+        "users": [
+            "a"
+        ],
+        "count": 1
+    },
+    "Haputale": {
+        "users": [
+            "a"
+        ],
+        "count": 1
+    },
+    "Pigeon Island National Park": {
+        "users": [
+            "a"
+        ],
+        "count": 1
+    },
+    "Kalpitiya": {
+        "users": [
+            "k"
+        ],
+        "count": 1
+    },
+    "Minneriya National Park": {
+        "users": [
+            "sanduni"
+        ],
+        "count": 1
+    },
+    "Kandy": {
+        "users": [
+            "a"
+        ],
+        "count": 1
+    }
+}

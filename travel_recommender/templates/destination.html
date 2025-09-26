@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ location.place }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='destination.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}">← Back to Home</a>
+    <div class="image-container">
+        <h1>{{ location.place }}</h1>
+        <img src="{{ url_for('static', filename=location.image) }}" alt="{{ location.place }}" style="width: 400px; height: auto; border-radius: 10px;">
+    </div>
+    <div class="intro">
+        {% if session.username %}
+            <form method="POST">
+                <input type="hidden" name="like" values="1">
+                {% set liked_users = likes.get("users",[]) %}
+                {%set like_count = likes.get("count",0) %}
+
+                <button type="submit">
+                    {% if session.username in liked_users %}
+                        ❤️ Liked
+                    {% else %}
+                        🤍 Like
+                    {% endif %}
+                </button>
+                <p id="like_count">{{ like_count }} like{{ 's' if like_count != 1 else '' }}</p>
+            </form>
+        {% else %}
+            <p><a href="{{ url_for('login') }}">Login</a> to like this destination.</p>
+        {% endif %}
+                
+        <p><strong>Type:</strong> {{ location.type }}</p>
+        <p><strong>Climate:</strong> {{ location.climate }}</p>
+        <p><strong>Budget:</strong> {{ location.budget }}</p>
+        <p><strong>Activity:</strong> {{ location.activity }}</p>
+    
+        <p><strong>Description:</strong> {{ location.value }}</p>
+    </div>
+
+    <hr>
+    <div class="reviews">
+        <h2>Reviews</h2>
+        <!--Show reviews-->
+        {% if reviews %}
+            <ul>
+                {% for review in reviews %}
+                    <li><strong>{{ review.user }}:</strong> {{ review.comment }}  
+                    <span class="stars">
+                    {% for i in range(review.rating) %}
+                        ⭐
+                    {% endfor %}
+                    {% for i in range(5 - review.rating) %}
+                        ☆
+                    {% endfor %}
+                </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No reviews yet. Be the first to review!</p>
+        {% endif %}
+
+        <!-- Add review form -->
+        {% if session.username %}
+            <form method="POST" style="margin-top: 20px;">
+                <label for="rating">Rating:</label>
+                <select name="rating" required>
+                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                    <option value="3">⭐⭐⭐ (3)</option>
+                    <option value="2">⭐⭐ (2)</option>
+                    <option value="1">⭐ (1)</option>
+                </select>
+                <br><br>
+                <label for="comment">Leave a review:</label><br>
+                <textarea name="comment" rows="4" cols="50" required></textarea><br>
+                <button type="submit">Submit Review</button>
+            </form>
+        {% else %}
+            <p><a href="{{ url_for('login') }}">Login</a> to write a review.</p>
+        {% endif %}
+    </div>
+
+    </body>
+</html>

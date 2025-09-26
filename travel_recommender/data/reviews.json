@@ -1,0 +1,156 @@
+{
+    "Ella": [
+        {
+            "user": "a",
+            "comment": "It's an amazing place.",
+            "rating": 5
+        },
+        {
+            "user": "b",
+            "comment": "Hiking trails are my favourites.",
+            "rating": 5
+        },
+        {
+            "user": "i",
+            "comment": "Hiking trails are my favourite.",
+            "rating": 5
+        }
+    ],
+    "Anuradhapura": [
+        {
+            "user": "j",
+            "comment": "Very interesting and calm place.",
+            "rating": 5
+        }
+    ],
+    "Katharagama": [
+        {
+            "user": "j",
+            "comment": "It is the Place of Lord katharagama and wordhiped by all religions. Crowded on Poya Day.",
+            "rating": 5
+        }
+    ],
+    "Jaffna": [
+        {
+            "user": "j",
+            "comment": "Interesting. Hindu Culture and differ from southern climate..",
+            "rating": 4
+        }
+    ],
+    "Nuwara Eliya": [
+        {
+            "user": "a",
+            "comment": "It's called as Little- England in Sri lanka. Very beautiful to see.",
+            "rating": 5
+        },
+        {
+            "user": "e",
+            "comment": "There are a number of hotels for low budget.",
+            "rating": 5
+        },
+        {
+            "user": "i",
+            "comment": "There are so many flowers.",
+            "rating": 4
+        }
+    ],
+    "Horton Plains National Park": [
+        {
+            "user": "a",
+            "comment": "Horton Plains. Rich with wild animals and mist.",
+            "rating": 5
+        }
+    ],
+    "Udawalawe National Park": [
+        {
+            "user": "c",
+            "comment": "Best place to visit Elephants.",
+            "rating": 5
+        }
+    ],
+    "Yala National Park": [
+        {
+            "user": "c",
+            "comment": "Best place to visit leopards.",
+            "rating": 5
+        },
+        {
+            "user": "g",
+            "comment": "Elephants, leopards its amazing.",
+            "rating": 5
+        }
+    ],
+    "Mirissa": [
+        {
+            "user": "d",
+            "comment": "Beautiful beach with coconut trees",
+            "rating": 5
+        }
+    ],
+    "Trincomalee": [
+        {
+            "user": "d",
+            "comment": "Sandy beach.",
+            "rating": 5
+        },
+        {
+            "user": "h",
+            "comment": "very calm beach.",
+            "rating": 5
+        }
+    ],
+    "Sinharaja Forest Reserve": [
+        {
+            "user": "e",
+            "comment": "The best place for nature lovers. Last remaining rainforest in Sri Lanka. ",
+            "rating": 5
+        }
+    ],
+    "Madu River": [
+        {
+            "user": "e",
+            "comment": "Very famous for boat-riding.",
+            "rating": 5
+        }
+    ],
+    "Galle": [
+        {
+            "user": "f",
+            "comment": "Galle Fort is the most famous.",
+            "rating": 5
+        },
+        {
+            "user": "sanduni",
+            "comment": "Beautiful place.",
+            "rating": 5
+        }
+    ],
+    "Sigiriya": [
+        {
+            "user": "f",
+            "comment": "Wonder of the Sri Lankans.",
+            "rating": 5
+        }
+    ],
+    "Wilpattu National Park": [
+        {
+            "user": "g",
+            "comment": "I'd love to see leopards there.",
+            "rating": 5
+        }
+    ],
+    "Hikkaduwa": [
+        {
+            "user": "h",
+            "comment": "Best for coral-reef lovers. Busy beach.",
+            "rating": 5
+        }
+    ],
+    "Minneriya National Park": [
+        {
+            "user": "sanduni",
+            "comment": "Best place for Elephant lovers!",
+            "rating": 5
+        }
+    ]
+}

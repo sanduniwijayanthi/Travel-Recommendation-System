@@ -1,0 +1,45 @@
+body{
+    background-color: #D4A373;
+    display: block;
+    padding: 10px;
+    
+}
+
+.image-container{
+    padding-top: 15px;
+    padding-left: 40px;
+
+}
+
+.intro{
+    font-family: sans-serif;
+    position: absolute;
+    left: 500px;
+    top: 110px;
+    font-size: large;
+
+}
+
+.intro button{
+    font-size: large;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+p{
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#like_count{
+    font-size: smaller;
+    
+}
+

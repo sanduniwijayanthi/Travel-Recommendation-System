@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="header">
+        
+        {% if username == "Guest"%}
+            <a href="{{url_for('login')}}"><button>Login</button></a>
+        {% else %}
+            <a href="{{url_for('logout')}}"><button>Logout</button></a>
+        {% endif %}
+        <h2>Hello, {{ username}}!</h2>
+        
+        <form method="get" action="{{ url_for('index')}}">
+            <input type="hidden" name="recommend" value="true">
+            <button id="recom" type="submit">Show Recommandations</button>
+        </form>
+        
+    </div>
+    <hr>
+    
+    <div class="filter">
+        <p>What is your plan?</p>
+        <form method="GET" action="{{ url_for('index') }}" class="filter-form" style="text-align:center; margin-bottom: 30px;">
+            <label>Select type:</label>
+            <select name="type">
+                <option value="">All Types</option>
+                <option value="Nature">Nature</option>
+                <option value="Scenic">Scenic</option>
+                <option value="Historical">Historical</option>
+                <option value="Religious">Religious</option>
+                <option value="Cultural">Cultural</option>
+            </select>
+
+            <label>Select climate:</label>
+            <select name="climate">
+                <option value="">All Climates</option>
+                <option value="Cool">Cool</option>
+                <option value="Warm">Warm</option>
+                <option value="Hot">Hot</option>
+            </select>
+
+            <label>Select budget:</label>
+            <select name="budget">
+                <option value="">All Budgets</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button type="submit">Filter</button>
+        </form>
+    </div>
+    <div class="main-contain">
+        <div class="grid-container">
+            {% for location in locations %}
+            <a href="{{url_for('destination_details',place=location.place|replace(' ','%20'))}}" style="text-decoration:none; color: inherit;">
+                <div class="card">
+                    <img src="{{url_for('static',filename=location.image) }}" alt="{{location.place}}">
+                    <h3>{{location.place}}</h3>
+                </div>
+            </a>
+            {% endfor %}
+
+        </div>
+
+        <div class="pagination" style="text-align: center; margin: 20px;">
+        {% if page > 1 %}
+            <a href="{{ url_for('index', page=page-1) }}"><button>Previous</button></a>
+        {% endif %}
+
+        <span>Page {{ page }} of {{ total_pages }}</span>
+
+        {% if page < total_pages %}
+            <a href="{{ url_for('index', page=page+1) }}"><button>Next</button></a>
+        {% endif %}
+        </div>
+    </div>
+
+    <!--Java script to conntrol modal-->
+    <script>
+        
+    </script>
+</body>
+</html>
